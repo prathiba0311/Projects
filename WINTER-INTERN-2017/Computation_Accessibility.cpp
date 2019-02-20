@@ -15,7 +15,7 @@ typedef pair<ll,ll> pll;
 ll maxi=LLONG_MIN;
 ll mini=LLONG_MAX;
 void fast() { ios_base::sync_with_stdio(false); cin.tie(NULL); }
-ll t,i,j,k,n,temp,flag,ans,m,cnt,name;
+ll t,i,j,k,n,temp,flag,ans,m,cnt,name;		//
 vl com;
 vl visit;
 vl l;
@@ -160,7 +160,6 @@ void dfs_left(set<ll> dag[],vector<ll>& visit,int node)
 {
     int i;
 	int cur=node;
-	//cout<<cur<<" ";
 	visit[cur]=1;
 	for(set<ll>::iterator it =dag[cur].begin();it != dag[cur].end();it++)
 	{
@@ -175,7 +174,6 @@ void dfs_left(set<ll> dag[],vector<ll>& visit,int node)
 void dfs_right(set<ll> dag[],vector<ll>& visit,int node)
 {
 	int cur=node;
-	//cout<<cur<<" ";
 	visit[cur]=1;
 	for(set<ll>::reverse_iterator it =dag[cur].rbegin();it != dag[cur].rend();it++)
 	{
@@ -266,8 +264,6 @@ int main()
     	}
     }
 
-    //cout<<com[0]<<com[1]<<com[2]<<endl;
-    //cout<<*dag[3].rbegin();
   //initialisations
     visit.resize(cnt+2,0);
     name=cnt+2;
