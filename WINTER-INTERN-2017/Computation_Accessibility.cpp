@@ -15,10 +15,10 @@ typedef pair<ll,ll> pll;
 ll maxi=LLONG_MIN;
 ll mini=LLONG_MAX;
 void fast() { ios_base::sync_with_stdio(false); cin.tie(NULL); }
-ll t,i,j,k,n,temp,flag,ans,m,cnt,name;		//
-vl com;
-vl visit;
-vl l;
+ll t,i,j,k,n,temp,flag,ans,m,cnt,name;		//i, j and k are loop variables; cnt is count of new number of vertices after collapsing
+vl com;						// name is used to assign the values of array L and R
+vl visit;					// com contains the mapping between the original and the new DAG generated
+vl l;						
 vl r;
 vector<pll> L;
  
